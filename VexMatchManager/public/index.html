@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="Logo.png" type="image/png" sizes="16x16">
+<script src="/__/firebase/7.14.0/firebase-app.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+</link>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136838212-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136838212-1');
+</script>
+<style media="screen">
+  html {
+    font-family: 'Ubuntu', sans-serif;
+  }
+</style>
+
+<head>
+  <title>Login || VMM</title>
+  <div style="margin-right: 0px; position: fixed;margin-left: 0px; width:100%; height: inherit; top:0; left:0; background-color: #ffffff;">
+    <div style="float:left;">
+      <h1 style="margin-left: 50px"><b>
+          <font style="font-size:40px;" color="#00e6b8">Vex Match Manager</font>
+        </b></h1>
+    </div>
+    <div style="float:right; margin-right:100px; margin-top:10px; font-size:15px;">
+      <h3 style="float: left;">
+        <font color="#bfbfbf"></font>
+      </h3>
+      <h3 style="float:right;margin-left:30px;">
+        <font color="#bfbfbf"></font>
+      </h3>
+    </div>
+  </div>
+</head>
+
+<script>var loggedIn = 0
+  var user = firebase.auth().currentUser;
+  console.log('user');
+</script>
+
+<body style="background-color:#f2f2f2">
+  <center><div style="float: left; margin-left: 550px;margin-top:200px; font-size:20px; margin-right:80px; line-height:1.6; background-color: #ffffff; padding:50px">
+  <div class="container">
+    <p id="AcDeni">Login to the Vex Match Manager Here</p><br>
+    <label for="uname"><b>Username</b></label>
+    <input placeholder="Enter Username" id="uname" required><br><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="pswd" required><br><br>
+
+    <button onclick="loginPage()">Login</button><br><br>
+  </div>
+</div></center>
+
+  <script src="first.js"></script>
+</body>
+</html>
